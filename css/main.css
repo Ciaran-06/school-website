@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rowdies&display=swap');
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: 'Rowdies', cursive;
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    font-size: 10vw;
+    color: white;
+    display: flex;
+    height: 22vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/ColoredShapes.svg);
+}
+
+.nav {
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    align-items: center;
+    color: white;
+    background-color: #1f1e1e;
+    gap: 1vw;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+    margin-left: 1vw;
+}
+
+.nav a:hover {
+    color: red;
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.main {
+    background-color: red;
+    width: 75vw;
+}
