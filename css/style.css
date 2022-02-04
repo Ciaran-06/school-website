@@ -42,16 +42,21 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
 }
 
 #science {
-    background-image: url("./img/hexagon.svg");
+    background-image: url("../img/hexagon.svg");
 }
 
 #comp {
-    background-image: url("./img/endless-constellation.svg");
+    background-image: url("../img/endless-constellation.svg");
 }
 
 #maths {
-    background-image: url("./img/Stockchart.svg");
+    background-image: url("../img/Stockchart.svg");
+}
+
+p {
+    color: blue;
 }
