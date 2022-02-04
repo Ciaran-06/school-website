@@ -15,16 +15,16 @@
     <div class="container">
         <div class="row">
             <div class="box" id="n4">
-                <p onclick="location.href= 't.html'">N4</p>
+                <p onclick="levelSet(1)">N4</p>
             </div>
             <div class="box" id="n5">
-                <p>N5</p>
+                <p onclick="levelSet(2)">N5</p>
             </div>
             <div class="box" id="hi">
-                <p>Higher</p>
+                <p onclick="levelSet(3)">Higher</p>
             </div>
             <div class="box" id="ah">
-                <p>Advanced</p>
+                <p onclick="levelSet(4)">Advanced</p>
             </div>
         </div>
     </div>
@@ -33,7 +33,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
 
     <script>
-        const effect = VANTA.NET({
+        var effect = VANTA.NET({
             el: ".container",
             mouseControls: true,
             touchControls: true,
@@ -46,6 +46,7 @@
 
         window.addEventListener('resize', function(event) {
             effect.resize();
+            //console.log("resized")
         });
     </script>
 </body>

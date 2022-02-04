@@ -1,4 +1,19 @@
 var level; //academic sqa level
+var lPrefix; //prefix for loading content : used for file path concatinaiton
+
+function levelSet(input) {
+    if (input == 1) {
+        lPrefix = "n4";
+    } else if (input == 2) {
+        lPrefix = "n5";
+    } else if (input == 3) {
+        lPrefix = "hi";
+    } else if (input == 4) {
+        lPrefix = "ah";
+    }
+
+    console.log(lPrefix);
+}
 
 function webchange(pTarg, depth, level) {
     //TODO:
