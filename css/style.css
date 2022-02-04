@@ -45,8 +45,7 @@ body {
     overflow: hidden;
 }
 
-#science,
-#chem {
+#science {
     background-image: url("../img/Hexagon.svg");
 }
 
