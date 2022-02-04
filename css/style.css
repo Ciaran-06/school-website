@@ -45,7 +45,7 @@ body {
     overflow: hidden;
 }
 
-#chem,
+#bio,
 #science {
     background-image: url("../img/Hexagon.svg");
 }
@@ -58,7 +58,7 @@ body {
     background-image: url("../img/Stockchart.svg");
 }
 
-#bio {
+#chem {
     background-image: url("../img/Virus.svg");
 }
 
