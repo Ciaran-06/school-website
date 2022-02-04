@@ -14,27 +14,27 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="box" id="n4">
-                <p onclick="levelSet(1)">N4</p>
+            <div class="box" id="n4" onclick="levelSet(1)">
+                <p>N4</p>
             </div>
-            <div class="box" id="n5">
-                <p onclick="levelSet(2)">N5</p>
+            <div class="box" id="n5" onclick="levelSet(2)">
+                <p>N5</p>
             </div>
-            <div class="box" id="hi">
-                <p onclick="levelSet(3)">Higher</p>
+            <div class="box " id="hi " onclick="levelSet(3) ">
+                <p>Higher</p>
             </div>
-            <div class="box" id="ah">
-                <p onclick="levelSet(4)">Advanced</p>
+            <div class="box " id="ah " onclick="levelSet(4) ">
+                <p>Advanced</p>
             </div>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.net.min.js "></script>
 
     <script>
         var effect = VANTA.NET({
-            el: ".container",
+            el: ".container ",
             mouseControls: true,
             touchControls: true,
             gyroControls: false,
@@ -46,7 +46,7 @@
 
         window.addEventListener('resize', function(event) {
             effect.resize();
-            //console.log("resized")
+            //console.log("resized ")
         });
     </script>
 </body>
