@@ -60,3 +60,14 @@ body {
 p {
     color: blue;
 }
+
+@media screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .column {
+        flex-grow: 1;
+        height: 33%;
+    }
+}
