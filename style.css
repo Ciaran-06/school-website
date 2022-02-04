@@ -3,6 +3,7 @@ body {
     height: 100%;
     margin: 0;
     overflow: hidden;
+    background: black;
 }
 
 .container {
@@ -20,4 +21,37 @@ body {
     height: 100vh;
     font-size: 3vw;
     font-family: 'Rowdies', cursive;
+    transition: all .10s ease-in-out;
+    color: white;
+}
+
+.column:hover {
+    color: red;
+    transform: scale(1.1);
+    transition: all .4s ease-in-out;
+}
+
+.column:active {
+    transform: scale(0.1);
+    transition: all .3s ease-in-out;
+}
+
+#comp,
+#science,
+#maths {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#science {
+    background-image: url("./img/hexagon.svg");
+}
+
+#comp {
+    background-image: url("./img/endless-constellation.svg");
+}
+
+#maths {
+    background-image: url("./img/Stockchart.svg");
 }

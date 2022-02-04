@@ -8,17 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
     <title>STEM</title>
+    <script type="text/javascript" src="./js/main.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="column" id="comp">
+        <div class="column" id="comp" onclick="webchange('math')">
             <p>Computer Science</p>
         </div>
-        <div class="column" id="science">
+        <div class="column" id="science" onclick="webchange('math')">
             <p>Science</p>
         </div>
-        <div class="column" id="maths" onclick="location.href = 'math.html'">
+        <div class="column" id="maths" onclick="webchange('math')">
             <p>Maths</p>
         </div>
     </div>
