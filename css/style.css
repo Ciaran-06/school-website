@@ -45,7 +45,8 @@ body {
     overflow: hidden;
 }
 
-#science {
+#science,
+#chem {
     background-image: url("../img/hexagon.svg");
 }
 
@@ -57,8 +58,12 @@ body {
     background-image: url("../img/Stockchart.svg");
 }
 
-p {
-    color: blue;
+#bio {
+    background-image: url("../img/Virus.svg");
+}
+
+#phy {
+    background-image: url("../img/Stackedwave.svg");
 }
 
 @media screen and (max-width: 1000px) {
@@ -69,5 +74,6 @@ p {
     .column {
         flex-grow: 1;
         height: 33%;
+        font-size: 10vw;
     }
 }
