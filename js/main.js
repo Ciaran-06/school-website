@@ -12,7 +12,9 @@ function levelSet(input) {
         lPrefix = "ah";
     }
 
-    console.log(lPrefix);
+    location.href = "./subChoice.html";
+
+    //console.log(lPrefix); debug line
 }
 
 function webchange(pTarg, depth, level) {
