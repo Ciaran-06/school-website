@@ -49,3 +49,23 @@ body {
     transform: scale(0.1);
     transition: all .3s ease-in-out;
 }
+
+@media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .row {
+        width: 50vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        flex: 1;
+        height: 1vh;
+        width: 50vw;
+        font-size: 5vw;
+    }
+}
