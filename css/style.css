@@ -31,11 +31,6 @@ body {
     transition: all .4s ease-in-out;
 }
 
-.column:active {
-    transform: scale(0.1);
-    transition: all .3s ease-in-out;
-}
-
 #comp,
 #science,
 #maths {
@@ -75,5 +70,12 @@ body {
         flex-grow: 1;
         height: 33%;
         font-size: 10vw;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .column:active {
+        transform: scale(0.1);
+        transition: all .3s ease-in-out;
     }
 }
