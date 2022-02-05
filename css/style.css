@@ -6,6 +6,10 @@ body {
     background: #1f1e1e;
 }
 
+.body {
+    overflow: hidden;
+}
+
 .container {
     display: -webkit-flex;
     display: flex;
