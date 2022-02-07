@@ -25,14 +25,16 @@ function levelSet(input) {
 }
 
 function webchange(pTarg, level) {
-
     var loc = window.location.pathname;
     var dir = loc.substring(0, loc.lastIndexOf('/'));
 
-    console.log(dir);
 
-    location.href = dir + "/pages/math/" + getCookie("level") + "/main.html";
-    console.log(dir + "/pages/math/" + getCookie("level") + "/main.html");
+    if (level == 1) {
+        location.href = dir + "/pages/" + pTarg + "/" + getCookie("level") + "/main.html";
+        console.log(dir + "/pages/math/" + getCookie("level") + "/main.html");
+    } else {
+        location.href = dir + "/pages/" + pTarg + "/" + pTarg + ".html";
+    }
 
 }
 
