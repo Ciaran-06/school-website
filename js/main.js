@@ -31,6 +31,9 @@ function webchange(pTarg, level) {
 
     console.log(dir);
 
+    location.href = dir + "/pages/math/" + getCookie("level") + "/main.html";
+    console.log(dir + "/pages/math/" + getCookie("level") + "/main.html");
+
 }
 
 function lvl() {
