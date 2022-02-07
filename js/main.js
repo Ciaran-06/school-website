@@ -3,8 +3,8 @@
 
 function levelSet(input) {
 
-    document.cookie = "level=" + input + ";";
-    console.log("level set to " + input);
+    //document.cookie = "level=" + input + ";";
+    //console.log("level set to " + input);
 
     if (input == 1) {
         lPrefix = "n4";
@@ -16,6 +16,7 @@ function levelSet(input) {
         lPrefix = "ah";
     }
 
+    document.cookie = "level=" + lPrefix + ";";
     location.href = "./subChoice.html";
 
     console.log(lPrefix);
@@ -23,27 +24,18 @@ function levelSet(input) {
     //return level;
 }
 
-function webchange(pTarg, depth, level) {
-    //TODO:
-    //1. Get User Level & store in global variable
-    //2. check if user level is required for redirect 
-    //3. if user level is required for redirect then  conactanet along with pTarg & call redirect func with depth 
+function webchange(pTarg, level) {
+    var loc = window.location.pathname;
+    var dir = loc.substring(0, loc.lastIndexOf('/'));
 
-
-
-}
-
-function redirect(depth, level) {
-    if (depth = 1) {
-        location.href = "./pages/" + pTarg + "/" + pTarg + ".html";
-        console.log("1");
-    } else if (depth = 2) {
-        location.href = "./pages/" + pTarg + "/" + pTarg + "/" + pTarg + ".html";
-        console.log("2");
-    } else if (depth = 3) {
-        location.href = "./pages/" + pTarg + "/" + pTarg + "/" + pTarg + "/" + pTarg + ".html";
-        console.log("3");
+    if (level == 1) {
+        console.log(dir);
+        location.href = dir + "/pages/" + pTarg + "/" + getCookie("level") + "/" + pTarg + ".html";
+    } else {
+        location.href = dir + "/pages/" + pTarg + "/" + pTarg + ".html";
+        console.log(dir + "/pages/" + pTarg + "/" + pTarg + ".html");
     }
+
 }
 
 function lvl() {
@@ -66,14 +58,13 @@ function getCookie(cname) {
     return "";
 }
 
-function checkCookie() {
-    let username = getCookie("username");
-    if (username != "") {
-        alert("Welcome again " + username);
-    } else {
-        username = prompt("Please enter your name:", "");
-        if (username != "" && username != null) {
-            setCookie("username", username, 365);
-        }
-    }
+function test() {
+    var loc = window.location.pathname;
+    var dir = loc.substring(0, loc.lastIndexOf('/'));
+
+    console.log(dir);
+}
+
+function change() {
+    location.href = "../pages/math/math.html";
 }
