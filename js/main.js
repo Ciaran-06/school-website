@@ -28,7 +28,7 @@ function webchange(pTarg, level) {
     var loc = window.location.pathname;
     var dir = loc.substring(0, loc.lastIndexOf('/'));
 
-    dir = dir.substring(15, end);
+    dir = dir.substring(15, dir.length);
 
     if (level == 1) {
         console.log(dir);
