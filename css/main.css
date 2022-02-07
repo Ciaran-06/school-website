@@ -72,7 +72,7 @@ body {
     display: flex;
     justify-self: flex-end;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 15vw;
 }
 
 iframe {

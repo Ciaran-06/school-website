@@ -1,7 +1,11 @@
-var level; //academic sqa level
-var lPrefix; //prefix for loading content : used for file path concatinaiton
+//let level; //academic sqa level
+//var lPrefix; //prefix for loading content : used for file path concatinaiton
 
 function levelSet(input) {
+
+    document.cookie = "level=" + input + ";";
+    console.log("level set to " + input);
+
     if (input == 1) {
         lPrefix = "n4";
     } else if (input == 2) {
@@ -14,7 +18,9 @@ function levelSet(input) {
 
     location.href = "./subChoice.html";
 
-    //console.log(lPrefix); debug line
+    console.log(lPrefix);
+
+    //return level;
 }
 
 function webchange(pTarg, depth, level) {
@@ -37,5 +43,37 @@ function redirect(depth, level) {
     } else if (depth = 3) {
         location.href = "./pages/" + pTarg + "/" + pTarg + "/" + pTarg + "/" + pTarg + ".html";
         console.log("3");
+    }
+}
+
+function lvl() {
+    return getCookie("level");
+}
+
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+
+function checkCookie() {
+    let username = getCookie("username");
+    if (username != "") {
+        alert("Welcome again " + username);
+    } else {
+        username = prompt("Please enter your name:", "");
+        if (username != "" && username != null) {
+            setCookie("username", username, 365);
+        }
     }
 }
