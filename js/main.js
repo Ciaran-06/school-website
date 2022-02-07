@@ -27,7 +27,7 @@ function levelSet(input) {
 function webchange(pTarg, level) {
     var loc = window.location.pathname;
     var dir = loc.substring(0, loc.lastIndexOf('/'));
-    console.log(dir.substring(0, 15 = ""));
+    console.log(dir.substring(15, end));
 
     /* if (level == 1) {
          console.log(dir);
