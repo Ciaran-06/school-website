@@ -32,8 +32,12 @@ function webchange(pTarg, level) {
     if (level == 1) {
         location.href = dir + "/pages/" + pTarg + "/" + getCookie("level") + "/main.html";
         console.log(dir + "/pages/math/" + getCookie("level") + "/main.html");
+    } else if (level == 2) {
+        location.href = dir + "/" + pTarg + "/" + getCookie("level") + "/main.html";
     } else {
         location.href = dir + "/pages/" + pTarg + "/" + pTarg + ".html";
+
+
     }
 
 }
