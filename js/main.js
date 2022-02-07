@@ -30,7 +30,12 @@ function webchange(pTarg, level) {
 
     if (level == 1) {
         console.log(dir);
-        location.href = dir + "/pages/" + pTarg + "/" + getCookie("level") + "/" + pTarg + ".html";
+        if (dir == "") {
+            location.href = dir + "/pages/" + pTarg + "/" + getCookie("level") + "/main.html";
+        } else {
+            location.href = dir + "/" + pTarg + "/" + getCookie("level") + "/main.html";
+            console.log(dir + "/" + pTarg + "/" + getCookie("level") + "/main.html");
+        }
     } else {
         location.href = dir + "/pages/" + pTarg + "/" + pTarg + ".html";
         console.log(dir + "/pages/" + pTarg + "/" + pTarg + ".html");
